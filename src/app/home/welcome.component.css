@@ -17,6 +17,7 @@
 
 em {color:#E05C65; padding-left:10px; font-size: 10px; float:right}
 .error input {background-color:#E3C3C5;}
+.errormessage {color: red; font-size: 20px;}
 form { margin-top: 10px; }
 label { display: block; }
 .form-group { margin-top: 5px; }

@@ -32,6 +32,7 @@ export class AuthService {
        this.currentUser = lcurrentUser.username;
        console.log(this.currentUser);
     }
+
     loginUser(userName: string, password: string) {
       let loginInfo = { email: userName, password: password };
 
@@ -52,8 +53,8 @@ export class AuthService {
                     // return false to indicate failed login
                     return false;
                 }
-            });
-      
+            })
+       .catch(this.handleError);
    }
  
     isAuthenticated(){
@@ -79,8 +80,8 @@ export class AuthService {
     logout() {
       this.token = null;
       localStorage.removeItem('currentUser');
-  
     } 
+
     private handleError(err: HttpErrorResponse) {
         // in a real world app, we may send the server to some remote logging infrastructure
         // instead of just logging it to the console

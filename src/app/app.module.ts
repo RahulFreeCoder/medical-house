@@ -16,6 +16,7 @@ import {RegisterComponent} from'./users/register.component';
 
 import {appRoutes} from './routes';
 import {AuthService} from './home/auth.service';
+import {AuthGuardService} from './home/auth.guard.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import {AuthService} from './home/auth.service';
     HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [ AuthService ],
+  providers: [ AuthService, AuthGuardService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

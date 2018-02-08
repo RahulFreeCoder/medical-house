@@ -21,7 +21,8 @@ export class WelcomeComponent {
     
     login(formValues): void{
        this.authService.loginUser(formValues.email, formValues.password)
-       .subscribe(resp => {
+       .subscribe(
+           resp => {
            console.log(resp);
         if(!resp) {
              this.errorMessage = "Wrong email and password!";
@@ -31,7 +32,11 @@ export class WelcomeComponent {
             this.errorMessage = null;
             this.welcomeMessage = "Welcome User to store, Please Click on Proceed";
       }
-     });
+     },
+        err => {
+            this.errorMessage = "Server Error! Please contact system administrator!";
+     })
+     
     }
        
     logout(){
