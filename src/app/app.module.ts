@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { RouterModule } from '@angular/router'
 import { HttpClientModule} from '@angular/common/http';
 import { HttpModule } from '@angular/http'
-
+import {FwModule } from '../fw/fw.module'
 
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -18,6 +18,9 @@ import {appRoutes} from './routes';
 import {AuthService} from './home/auth.service';
 import {AuthGuardService} from './home/auth.guard.service';
 
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +29,7 @@ import {AuthGuardService} from './home/auth.guard.service';
     AboutComponent,
     ProductComponent,
     ProductnavComponent,
-    RegisterComponent
+    RegisterComponent   
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import {AuthGuardService} from './home/auth.guard.service';
     ReactiveFormsModule,
     HttpModule,
     HttpClientModule,
+    FwModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [ AuthService, AuthGuardService ],

@@ -1,56 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: #fafafa;
-  font-family: 'Open Sans', sans-serif;
-  height: 100%;
-  }
+   font-family: 'Open Sans', sans-serif;
+   }
 
-h2 { margin: 0; }
-
-.bd-footer {
-     position: fixed;
-    height: 34px;
-    width: 100%;
-    bottom: 0px;
-    z-index: 9999;
-    left: 0px;
-    background: #464646;
-    box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.3);
-}
-
-.nav_foot {
-    float: left;
-}
-
-.nav_foot ul {
-    margin: 0;
-    padding: 0;
-    margin-left: 20px;
-}
-
-.nav_foot ul li {
-    display: inline-block;
-    height: 17px;
-    margin: 9px 20px 0 0;
-    font-family: 'AvenirNextLTPro-Regular';
-    font-size: 11px;
-    color: #ffffff;
-    border-right: 1px solid #c2c2c2;
-    padding: 0 20px 0 0;
-    letter-spacing: 1px;
-    line-height: 1.5em
-}
-
-.nav_foot ul li a {
-    font-family: 'AvenirNextLTPro-Regular';
-    font-size: 11px;
-    color: #fff;
-}
-.nav_foot ul li a:hover {
-    font-family: 'AvenirNextLTPro-Regular';
-    font-size: 11px;
-    color: #3cb86d;
-}
 
 /*jumbotran */
 .jumbotron {

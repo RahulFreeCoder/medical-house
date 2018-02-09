@@ -1,0 +1,47 @@
+:host {
+    background: #464646;; 
+    min-height: 26px;
+    z-index: 9999;
+    box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav_foot ul li a:hover {
+    font-family: 'AvenirNextLTPro-Regular';
+    font-size: 11px;
+    color: #3cb86d;
+}
+
+
+.nav_foot {
+    float: left;
+}
+
+.nav_foot ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.nav_foot ul li {
+    display: inline-block;
+    height: 17px;
+    margin: 9px 20px 0 0;
+    font-family: 'AvenirNextLTPro-Regular';
+    font-size: 11px;
+    color: #ffffff;
+    border-right: 1px solid #c2c2c2;
+    padding: 0 20px 0 0;
+    letter-spacing: 1px;
+    line-height: 1.5em
+}
+
+.nav_foot ul li a {
+    font-family: 'AvenirNextLTPro-Regular';
+    font-size: 11px;
+    color: #fff;
+}
+.nav_foot ul li a:hover {
+    font-family: 'AvenirNextLTPro-Regular';
+    font-size: 11px;
+    color: #3cb86d;
+}
