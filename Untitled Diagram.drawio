@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-08-02T06:56:39.171Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="M-oW2_6WaKdlUNPy5YNv" version="13.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2020-08-02T07:00:09.228Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36" etag="7h68BDDXaB12K6tg9LBi" version="13.5.8" type="github">
   <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Biz process">
     <mxGraphModel dx="868" dy="450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -31,18 +31,18 @@
           <mxGeometry x="172" width="376" height="184" as="geometry" />
         </mxCell>
         <mxCell id="4x0DBsmedhbezIaQ5GLJ-26" value="" style="rounded=1;whiteSpace=wrap;html=1;glass=0;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-8">
-          <mxGeometry x="8" y="49" width="82" height="115" as="geometry" />
+          <mxGeometry x="18" y="49" width="82" height="115" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-21" value="Accepted" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" parent="3nuBFxr9cyL0pnOWT2aG-8" vertex="1">
-          <mxGeometry x="18" y="64" width="60" height="40" as="geometry" />
+          <mxGeometry x="28" y="64" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="4x0DBsmedhbezIaQ5GLJ-6" value="Bad Request" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-8">
-          <mxGeometry x="18" y="114" width="60" height="40" as="geometry" />
+          <mxGeometry x="27" y="114" width="60" height="40" as="geometry" />
         </mxCell>
         <mxCell id="4x0DBsmedhbezIaQ5GLJ-62" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;glass=0;fontSize=9;" vertex="1" parent="3nuBFxr9cyL0pnOWT2aG-8">
           <mxGeometry x="228" y="190" width="142" height="188" as="geometry" />
         </mxCell>
-        <mxCell id="3nuBFxr9cyL0pnOWT2aG-11" value="Alerts &lt;br&gt;and &lt;br&gt;Notification" style="swimlane;connectable=0;startSize=40;html=1;whiteSpace=wrap;collapsible=0;recursiveResize=0;expand=0;" parent="3nuBFxr9cyL0pnOWT2aG-3" vertex="1">
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-11" value="" style="swimlane;connectable=0;startSize=40;html=1;whiteSpace=wrap;collapsible=0;recursiveResize=0;expand=0;" parent="3nuBFxr9cyL0pnOWT2aG-3" vertex="1">
           <mxGeometry x="548" width="132" height="184" as="geometry" />
         </mxCell>
         <mxCell id="3nuBFxr9cyL0pnOWT2aG-15" value="Notification Engine" style="swimlane;horizontal=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;startSize=40;html=1;whiteSpace=wrap;collapsible=0;recursiveResize=0;expand=0;" parent="3nuBFxr9cyL0pnOWT2aG-1" vertex="1">
@@ -173,6 +173,18 @@
         </mxCell>
         <mxCell id="4x0DBsmedhbezIaQ5GLJ-148" value="Email Bounced" style="rounded=0;whiteSpace=wrap;html=1;glass=0;fontSize=9;" vertex="1" parent="4x0DBsmedhbezIaQ5GLJ-113">
           <mxGeometry x="280" y="10" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="4x0DBsmedhbezIaQ5GLJ-149" value="" style="outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#BC1356;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.queue;glass=0;" vertex="1" parent="4x0DBsmedhbezIaQ5GLJ-113">
+          <mxGeometry x="400" y="35" width="82.98" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="4x0DBsmedhbezIaQ5GLJ-152" value="Dead letter Queue" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=0;fontSize=9;" vertex="1" parent="4x0DBsmedhbezIaQ5GLJ-113">
+          <mxGeometry x="411.49" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4x0DBsmedhbezIaQ5GLJ-153" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/flat-business-3/512/Flat_business-9-128.png;glass=0;fontSize=9;" vertex="1" parent="4x0DBsmedhbezIaQ5GLJ-113">
+          <mxGeometry x="520" y="10" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4x0DBsmedhbezIaQ5GLJ-154" value="Retry Logic to get messages rom Dead letter and reprocess" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;glass=0;fontSize=9;" vertex="1" parent="4x0DBsmedhbezIaQ5GLJ-113">
+          <mxGeometry x="525" y="50" width="90" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
